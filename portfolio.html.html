@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="settings.js"></script>
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <img src="C:\Users\Proprietaire\logo-iut.jpg" alt="Logo IUT Orléans">
+
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bienvenue">
+        <img src="C:\Users\Proprietaire\Capture d'écran 2025-03-13 150356.png" alt="Photo de profil">
+        <h1>HOORNAERT MARIE Jules</h1>
+        <p>Étudiant en BUT MT2E</p>
+    </section>
+    
+    
+    <section id="parcours">
+        
+        <div class="timeline-item">
+            
+            <img src= "C:\Users\Proprietaire\logo-colege.jpg" alt="Logo Collège">
+            <h3>Collège</h3>
+            <p>Mention Très Bien</p>
+        </div>
+        <div class="timeline-item">
+            <img src="C:\Users\Proprietaire\logo-lycee.png" alt="Logo Lycée">
+            <h3>Lycée</h3>
+            <p>Spécialités : Mathématiques, Physique-Chimie, NSI</p>
+        </div>
+        <div class="timeline-item">
+            <img src="C:\Users\Proprietaire\logo-iut.png" alt="Logo BUT MT2E">
+            <h3>BUT MT2E</h3>
+            <p>Première année</p>
+        </div>
+    </section>
+    
+    <section id="projets">
+        <h2>Mes Projets</h2>
+        <p>Liste et description de tes projets.</p>
+    </section>
+    
+    <section id="competences">
+        <h2>Compétences</h2>
+        <p>Liste de tes compétences techniques et transversales.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Moyens de te contacter (email, LinkedIn, etc.).</p>
+    
+    </section>
+    
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let sections = document.querySelectorAll(".section-title");
+    
+    sections.forEach(title => {
+        title.addEventListener("click", function() {
+            let content = this.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        });
+    });
+});
+</script>
+
+    
+    
+    <footer>
+        <p>&copy; 2025 HOORNAERT MARIE Jules - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
